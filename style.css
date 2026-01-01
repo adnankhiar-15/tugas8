@@ -1,0 +1,142 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #ff0050;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff3385;
+}
+
+/* Section awal */
+.awal {
+    background-color: #000;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.awal p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.awal p:first-child {
+    color: #69c9d0;
+}
+
+.awal p:last-child {
+    color: #ffd700;
+}
+
+/* Container utama */
+.halaman {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling untuk setiap section */
+section {
+    background-color: white;
+    margin: 30px 0;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #ff0050;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Warna berbeda untuk setiap section */
+#home {
+    border-left: 5px solid #69c9d0;
+}
+
+#pengertian {
+    border-left: 5px solid #ff0050;
+}
+
+#carakerja {
+    border-left: 5px solid #ffd700;
+}
+
+#strategi {
+    border-left: 5px solid #00f2ea;
+}
+
+#kesimpulan {
+    border-left: 5px solid #ff6b6b;
+    background-color: #fff9e6;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .awal {
+        padding: 30px 15px;
+    }
+    
+    .awal p {
+        font-size: 16px;
+    }
+    
+    section {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+    
+    section h2 {
+        font-size: 20px;
+    }
+}
